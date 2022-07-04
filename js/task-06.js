@@ -1,5 +1,5 @@
 const inputText = document.querySelector('#validation-input')
-const checkNumber = +inputText.dataset.length
+const checkNumber = Number(inputText.dataset.length)
 inputText.addEventListener('blur', (event) => {
     if (event.currentTarget.value.length === checkNumber) {
         inputText.classList.remove('invalid')
